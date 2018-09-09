@@ -1,0 +1,20 @@
+{
+    "projectName": "Snowflake",
+    "projectPath": "/Users/max/Documents/Projects/Snowflake",
+    "defaultEditor": "code",
+    "frontendHandler": {
+        "javascript": "/Users/max/.nvm/versions/node/v8.11.3/lib/node_modules/@aws-amplify/cli/node_modules/amplify-frontend-javascript"
+    },
+    "javascript": {
+        "framework": "angular",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "dist",
+            "BuildCommand": "npm run-script build",
+            "StartCommand": "ng serve"
+        }
+    },
+    "providers": {
+        "awscloudformation": "/Users/max/.nvm/versions/node/v8.11.3/lib/node_modules/@aws-amplify/cli/node_modules/amplify-provider-awscloudformation"
+    }
+}

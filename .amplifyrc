@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "nowflake-20180909151906-authRole",
+            "UnauthRoleArn": "arn:aws:iam::405618765219:role/nowflake-20180909151906-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::405618765219:role/nowflake-20180909151906-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "nowflake-20180909151906-deployment",
+            "UnauthRoleName": "nowflake-20180909151906-unauthRole",
+            "StackName": "nowflake-20180909151906",
+            "StackId": "arn:aws:cloudformation:eu-central-1:405618765219:stack/nowflake-20180909151906/ee0416d0-b432-11e8-bff2-024e51706334"
+        }
+    }
+}
