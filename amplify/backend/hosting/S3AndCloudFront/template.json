@@ -10,7 +10,7 @@
                 "AccessControl": "PublicRead",
                 "WebsiteConfiguration": {
                     "IndexDocument": "index.html",
-                    "ErrorDocument": "index.html"
+                    "ErrorDocument": "error.html"
                 },
                 "CorsConfiguration": {
                     "CorsRules": [

@@ -4,7 +4,11 @@ const awsmobile =  {
     "aws_project_region": "eu-central-1",
     "aws_content_delivery_bucket": "nowflake-20180909152636--hostingbucket",
     "aws_content_delivery_bucket_region": "eu-central-1",
-    "aws_content_delivery_url": "https://d4e4va7b7dai3.cloudfront.net"
+    "aws_content_delivery_url": "https://d4e4va7b7dai3.cloudfront.net",
+    "aws_cognito_identity_pool_id": "eu-central-1:b5b93367-531e-497a-95f1-7e9ad0d16073",
+    "aws_cognito_region": "eu-central-1",
+    "aws_user_pools_id": "eu-central-1_vV9x9BKHC",
+    "aws_user_pools_web_client_id": "7vjp6du4llb603qesl7nlgglto"
 };
 
 

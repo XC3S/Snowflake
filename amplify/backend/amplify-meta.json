@@ -1,35 +1,56 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "nowflake-20180909151906-authRole",
-            "UnauthRoleArn": "arn:aws:iam::405618765219:role/nowflake-20180909151906-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::405618765219:role/nowflake-20180909151906-authRole",
-            "Region": "eu-central-1",
-            "DeploymentBucketName": "nowflake-20180909151906-deployment",
-            "UnauthRoleName": "nowflake-20180909151906-unauthRole",
-            "StackName": "nowflake-20180909151906",
-            "StackId": "arn:aws:cloudformation:eu-central-1:405618765219:stack/nowflake-20180909151906/ee0416d0-b432-11e8-bff2-024e51706334"
-        }
-    },
-    "hosting": {
-        "S3AndCloudFront": {
-            "service": "S3AndCloudFront",
-            "providerPlugin": "awscloudformation",
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/nowflake-20180909151906-deployment/amplify-cfn-templates/hosting/template.json",
-                "logicalId": "hostingS3AndCloudFront"
-            },
-            "lastPushTimeStamp": "2018-09-09T13:53:10.743Z",
-            "output": {
-                "CloudFrontSecureURL": "https://d4e4va7b7dai3.cloudfront.net",
-                "S3BucketSecureURL": "https://nowflake-20180909152636--hostingbucket.s3.amazonaws.com",
-                "WebsiteURL": "http://nowflake-20180909152636--hostingbucket.s3-website.eu-central-1.amazonaws.com",
-                "CloudFrontDistributionID": "E3MIFL291K1TM3",
-                "Region": "eu-central-1",
-                "HostingBucketName": "nowflake-20180909152636--hostingbucket",
-                "CloudFrontDomainName": "d4e4va7b7dai3.cloudfront.net"
-            },
-            "lastPushDirHash": "MfLWYRMFTJGWRS64BWScDVpx9VQ="
-        }
-    }
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "nowflake-20180909151906-authRole",
+			"UnauthRoleArn": "arn:aws:iam::405618765219:role/nowflake-20180909151906-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::405618765219:role/nowflake-20180909151906-authRole",
+			"Region": "eu-central-1",
+			"DeploymentBucketName": "nowflake-20180909151906-deployment",
+			"UnauthRoleName": "nowflake-20180909151906-unauthRole",
+			"StackName": "nowflake-20180909151906",
+			"StackId": "arn:aws:cloudformation:eu-central-1:405618765219:stack/nowflake-20180909151906/ee0416d0-b432-11e8-bff2-024e51706334"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/nowflake-20180909151906-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-09-09T20:01:11.296Z",
+			"output": {
+				"CloudFrontSecureURL": "https://d4e4va7b7dai3.cloudfront.net",
+				"S3BucketSecureURL": "https://nowflake-20180909152636--hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://nowflake-20180909152636--hostingbucket.s3-website.eu-central-1.amazonaws.com",
+				"CloudFrontDistributionID": "E3MIFL291K1TM3",
+				"Region": "eu-central-1",
+				"HostingBucketName": "nowflake-20180909152636--hostingbucket",
+				"CloudFrontDomainName": "d4e4va7b7dai3.cloudfront.net"
+			},
+			"lastPushDirHash": "w8SY2jO7j/t8lzp0a78g1YdUFXY="
+		}
+	},
+	"auth": {
+		"cognito206baa8a": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/nowflake-20180909151906-deployment/amplify-cfn-templates/auth/cognito206baa8a-cloudformation-template.yml",
+				"logicalId": "authcognito206baa8a"
+			},
+			"lastPushTimeStamp": "2018-09-09T20:01:11.296Z",
+			"output": {
+				"AppClientSecret": "sp80or3sc2kp85uupjft6tfqaqpk2u0nqaoi9mom2e7ajb4ou7r",
+				"UserPoolId": "eu-central-1_vV9x9BKHC",
+				"AppClientIDWeb": "7vjp6du4llb603qesl7nlgglto",
+				"AppClientID": "7lb121g7baj67h1of9ln90ohqn",
+				"IdentityPoolId": "eu-central-1:b5b93367-531e-497a-95f1-7e9ad0d16073",
+				"IdentityPoolName": "cognito206baa8a_identitypool_206baa8a",
+				"UserPoolName": "cognito206baa8a_userpool_206baa8a"
+			},
+			"lastPushDirHash": "voNWoyzwNcPesO63XHSBWABa9c8="
+		}
+	}
 }
