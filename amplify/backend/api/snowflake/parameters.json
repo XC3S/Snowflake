@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "snowflake",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognito206baa8a",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "schemaGraphql": "s3://nowflake-20180909151906-deployment/amplify-appsync-files/schema.graphql.1536761525464",
+    "ResolverBucket": "nowflake-20180909151906-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1536761525464"
+}
