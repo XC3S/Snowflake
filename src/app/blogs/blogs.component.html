@@ -1,0 +1,19 @@
+<h1>Blogs</h1>
+<div *ngFor="let blog of blogs" class="blog"> 
+  <h3>{{ blog.name }} <a (click)="deleteBlog(blog.id)" style="font-weight:normal; font-size: 1rem; cursor: pointer">[delete]</a></h3>
+  <div *ngFor="let post of blog.posts.items"> 
+    <b>{{ post.title }}</b> ({{post.comments.items.length}})
+  </div>
+  <div>
+    <input type="text" placeholder="post title">
+    <button>+</button>
+  </div>
+</div>
+<div>
+  <h1>Create Blog</h1>
+  <form #blogForm="ngForm" (ngSubmit)="submitBlog(blogForm)">
+      <label>Name</label>
+      <input name="blogName" ngModel required>
+      <button>+</button>
+  </form>
+</div>

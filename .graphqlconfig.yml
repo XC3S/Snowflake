@@ -9,5 +9,3 @@ snowflake:
       graphQLApiId: tdzegajokjf47gj7vg6wegeo2q
       codeGenTarget: typescript
       generatedFileName: API.ts
-    endPoints: >-
-      https://iaqfo3fae5f3nfnmcbsu53jpb4.appsync-api.eu-central-1.amazonaws.com/graphql
